@@ -1,21 +1,26 @@
-import FormularioPostagem from '../formPostagem/formPostagem';
-
-import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';
 
+
+import 'reactjs-popup/dist/index.css';
 import './ModalPostagem.css'
+import FormPostagem from '../formPostagem/formPostagem';
 
 function ModalPostagem() {
-  return (
-    <>
-      <Popup 
-      trigger={<button className='border rounded px-4 hover:bg-white hover:text-indigo-800'>Nova postagem</button>} modal>
-        <div>
-          <FormularioPostagem />
-        </div>
-      </Popup>
-    </>
-  );
+    return (
+        <>
+            <Popup
+                trigger={
+                    <button 
+                        className='border rounded px-4 py-2 hover:bg-white hover:text-indigo-800'>
+                        Nova Postagem
+                    </button>
+                }
+                modal
+            >
+                <FormPostagem />
+            </Popup>
+        </>
+    );
 }
 
 export default ModalPostagem;

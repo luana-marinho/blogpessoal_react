@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-
+import './login.css'
 import AuthContext from '../../contexts/authContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
@@ -12,9 +12,8 @@ function Login() {
     {} as UsuarioLogin
   );
 
-  const { usuario, handleLogin } = useContext(AuthContext);
-
-  const {isLoading} = useContext(AuthContext) 
+  const { usuario, handleLogin, isLoading } = useContext(AuthContext);
+ 
 
   useEffect(() => {
     if (usuario.token !== "") {
@@ -63,7 +62,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <button  type='submit' className="rounded bg-indigo-400 hover:bg-indigo-900 text-white w-1/2 py-2 flex justify-center">
+          <button  type='submit' className="rounded bg-black hover:bg-gray-600 text-white w-1/2 py-2 flex justify-center">
            {isLoading ? <RotatingLines
             strokeColor="white"
             strokeWidth="5"
@@ -78,7 +77,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
 
           <p>
             Ainda não tem uma conta?{' '}
-            <Link to="/cadastro" className="text-indigo-800 hover:underline">
+            <Link to="/cadastro" className="text-blue-600 hover:underline">
               Cadastre-se
             </Link>
           </p>

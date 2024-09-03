@@ -1,0 +1,8 @@
+.fundoLogin {
+    background-image: url("https://ik.imagekit.io/hyd78ucng/Projeto%20Blog/login.jpg?updatedAt=1725370503314");
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
