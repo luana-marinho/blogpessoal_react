@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import CardPostagem from "../cardPostagem/cardPostagem";
 import { useState, useContext, useEffect } from "react";
 import AuthContext from "../../../contexts/authContext";
 import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../services/Service";
 import { DNA } from "react-loader-spinner";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
+import CardPostagem from "../cardPostagem/CardPostagem";
 
 function ListaPostagens() {
 
