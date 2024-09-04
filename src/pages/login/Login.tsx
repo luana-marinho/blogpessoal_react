@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import './login.css'
+import './Login.css'
 import AuthContext from '../../contexts/authContext';
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
