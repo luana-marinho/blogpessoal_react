@@ -5,7 +5,7 @@ import Postagem from "../../../models/Postagem";
 import { buscar } from "../../../services/Service";
 import { DNA } from "react-loader-spinner";
 import { ToastAlerta } from "../../../utils/ToastAlerta";
-import CardPostagem from "../cardPostagem/CardPostagem";
+import CardPostagem from "../cardpostagem/CardPostagem";
 
 function ListaPostagens() {
 

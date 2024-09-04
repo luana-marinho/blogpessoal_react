@@ -8,9 +8,9 @@ import { AuthProvider } from './contexts/authContext';
 import ListaTemas from './components/temas/lista_temas/listaTemas';
 import FormularioTema from './components/temas/formulario_tema/formularioTema';
 import DeletarTema from './components/temas/deletar_tema/deletarTema';
-import ListaPostagens from './components/postagens/listaPostagem/listaPostagem';
-import FormularioPostagem from './components/postagens/formPostagem/formPostagem';
-import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem';
+import ListaPostagens from './components/postagens/listapostagem/listaPostagem';
+import FormularioPostagem from './components/postagens/formpostagem/formPostagem';
+import DeletarPostagem from './components/postagens/deletarpostagem/deletarPostagem';
 
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
