@@ -32,7 +32,7 @@ function login(e: ChangeEvent<HTMLFormElement>) {
   e.preventDefault()
   handleLogin(usuarioLogin)
 }
-
+console.log(JSON.stringify(usuarioLogin))
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-bold ">
